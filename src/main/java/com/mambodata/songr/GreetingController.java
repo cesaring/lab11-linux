@@ -79,6 +79,12 @@ Artist: Dawit Getachew
         model.addAttribute("albumList",albumList);
     return "albums";
     }
+    
+    @GetMapping("/index")
+    public String index() {
+    	 
+    	return "index";
+    }
 // Create Object /Create Route
 // ArrayList for albums
 // Function albums, need imgUrl,
