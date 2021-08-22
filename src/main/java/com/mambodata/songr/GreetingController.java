@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 @Controller
 public class GreetingController {
+    ArrayList<Album> albumList = new ArrayList<>();	
 
     @GetMapping("/hello")
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
@@ -66,7 +67,7 @@ Artist: Dawit Getachew
 // Album Object: Title, Artist, SongCount, Length, ImageURL
     @GetMapping("/albums")
     public String albums(Model model){
-        ArrayList<Album> albumList = new ArrayList<>();
+
         Album album1 = new Album("Damn.","Kendrick Lamar",12,3600,"https://images-na.ssl-images-amazon.com/images/I/A1AMeOSldQL._SL1500_.jpg");
         Album album2 = new Album("Chasing Summer","Sir",13,3700,"https://m.media-amazon.com/images/I/814+RZcGxZL._SS500_.jpg");
        Album album3 = new Album("title","artist",14,3800,"https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/music/859718345268/1605347422/srch_hungama_56875331.jpg");
