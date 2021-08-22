@@ -37,7 +37,7 @@ public class GreetingController {
 // get mapping map route "/"
 // html template with CSS
 
-    @GetMapping("/")
+    @GetMapping("/splash")
     public String splash(){
         return "splash";
     }
@@ -80,7 +80,7 @@ Artist: Dawit Getachew
     return "albums";
     }
     
-    @GetMapping("/index")
+    @GetMapping("/") //new splash!
     public String index() {
     	 
     	return "index";
