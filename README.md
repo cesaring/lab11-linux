@@ -31,6 +31,16 @@ http://localhost:8080
 
 http://localhost:8080/albums
 
+There are two Tests: 
+
+1 default test for context (app up and running)
+
+and
+
+1 Test to see if "Damn" album was displayed by the /albums route.
+
+Points: 
+
 1 pt for hello route
 1 pt for capitalize route
 1 pt for splash page
