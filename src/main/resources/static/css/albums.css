@@ -1,0 +1,42 @@
+body {
+	background-color:darkseagreen;
+}
+
+li {
+	line-height:225px;
+}
+.card {
+	width: 459px;
+	height : 200px;
+	background-color:beige;
+	display: inline-block;
+	align-items: center;
+	/*line-height:200px;*/
+	object-fit: contain;
+}
+
+.specs {
+	width:225px;
+	/*height:200px;*/
+	background-color:white;
+	display:inline-block;
+	align-items:center;
+	object-fit:contain;
+	line-height: normal;
+
+}
+
+.coverart {
+	width: 225px;
+	/*height : 200px;*/
+	background-color:red;
+	display:inline-block;
+	align-items:center;
+	line-height: normal;
+}
+
+img {
+		width:225px;
+		/*height:199px; */
+		object-fit:contain;
+}

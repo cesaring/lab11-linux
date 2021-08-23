@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link th:href="@{css/albums.css}" rel="stylesheet"/>
 </head>
 <body>
 <h1>ALBUMS</h1>
 
 <ul th:each ="album: ${albumList} ">
-    <li>
-        TITLE: <div th:text ="${album.title}">title</div>
-        ARTIST: <div th:text ="${album.artist}">artist</div>
-        SONG COUNT: <div th:text ="${album.songCount}">songCount</div>
-        LENGTH: <div th:text ="${album.length}">length</div>
-        COVER ART: <img th:src="${album.imageUrl}"/>
+
+    <li class="card">
+	    <span class="specs">
+	    	<span>
+		        TITLE: <span th:text ="${album.title}">title</span><br>
+		        ARTIST: <span th:text ="${album.artist}">artist</span><br>
+		        SONG COUNT: <span th:text ="${album.songCount}">songCount</span><br>
+		        LENGTH: <span th:text ="${album.length}">length</span>
+	        </span>
+	    </span>
+     	<span class="coverart">
+        	<img th:src="${album.imageUrl}"/>
+    	</span>
     </li>
+
 </ul>
 
 </body>
